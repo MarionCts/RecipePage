@@ -1,0 +1,241 @@
+/* COULEURS */
+
+:root{
+    --ArrierePlan: rgba(243, 229, 215, 1);
+    --Blanc: rgba(255, 255, 255, 1);
+    --Sable : rgba(227, 221, 215, 1);
+    --Chocolat: rgba(133, 70, 50, 1);
+    --Terre: rgba(95, 86, 77, 1);
+    --Pierre: rgba(49, 46, 44, 1);
+    --Rose: rgba(255, 247, 251, 1);
+    --Fushia: rgba(122, 40, 78, 1);
+}
+
+/* TYPHTOGRAPHIES */
+
+font-face{
+    font-family: 'DM Sans', truetype;
+    src: url('assets/fonts/DMSans-VariableFont_opsz,wght.ttf');
+}
+
+font-face{
+    font-family: 'DM Sans Italique', truetype;
+    src: url('assets/fonts/DMSans-Italic-VariableFont_opsz,wght.ttf');
+}
+
+/* MODIFICATIONS GENERALES */
+
+body{
+    background-color: var(--ArrierePlan);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+figure{
+    margin: 0 0 40px 0;
+}
+
+section:not:nth-child(-n + 2){
+    margin-top: 32px;
+}
+
+section:not(:first-child):not(:last-child){
+    margin-bottom: 32px;
+}
+
+section:not(:last-child){
+    padding-bottom: 32px;
+}
+
+.conteneur, img{
+    border-radius: 24px;
+}
+
+section.ingredients, section.instructions{
+    border-bottom: 1px solid var(--Sable);
+}
+
+/* HABILLAGE DES TEXTES */
+
+h1, h2, h3,p, a, li, span, .bold{
+    letter-spacing: 0;
+}
+
+h1, h2, h3{
+    color: var(--Pierre);
+    margin: 0 0 24px;
+}
+
+p, a, li, span, .bold, th{
+    color: var(--Terre);
+}
+
+h1, h2, h3{
+    line-height: 100%;
+}
+
+p, span, li, .bold{
+    line-height: 150%;
+}
+
+p{
+    margin: 0;
+}
+
+h1{
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+h2{
+    font-family: "Young Serif", serif;
+    color: var(--Chocolat);
+    font-weight: 400;
+    font-size: 28px;
+}
+
+h3{
+    font-family: "Outfit", serif;
+    color: var(--Fushia);
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0;
+    padding-bottom: 16px;
+}
+
+p, a, li, span, th, td{
+    font-family: "Outfit", serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: left;
+}
+
+.bold, td{
+    font-weight: 600;
+
+}
+
+td{
+    color: var(--Chocolat);
+}
+
+/* DIMENSIONS DU CONTENEUR */
+
+.conteneur{
+    background-color: var(--Blanc);
+    max-width: 736px;
+    padding: 40px;
+    margin: 128px 0;
+}
+
+/* HABILLAGE DE L'IMAGE */
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+/* HABILLAGE DES LISTES */
+
+ul, ol{
+    padding: 0 0 0 20px;
+    margin: 0;
+}
+
+li{
+    padding-left: 20px;
+}
+
+li:not(:last-child){
+    padding-bottom: 10px;
+}
+
+li::marker{
+    color: var(--Chocolat);
+    font-weight: 600;
+}
+
+section.preparation li::marker{
+    color: var(--Fushia);
+}
+
+/* BLOC PREPARATION */
+
+section.preparation{
+    background-color: var(--Rose);
+    padding: 24px;
+}
+
+/* HABILLAGE DU TABLEAU */
+
+table{
+    margin-top: 24px;
+    border-collapse: collapse;
+    width: 100%;
+} 
+
+tr:not(:last-child){
+    border-bottom: 1px solid var(--Sable);
+}
+
+th, td{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 50%;
+}
+
+th{
+    padding-left: 32px;
+}
+
+tr:last-child th, tr:last-child td{
+    padding-bottom: 0;
+}
+
+@media (max-width: 768px){
+    
+    .conteneur{
+        max-width: 616px;
+    }
+    
+}
+
+@media (max-width: 430px){
+    
+    body, .conteneur{
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .conteneur, img{
+        border-radius: 0;
+    }
+    
+    .conteneur{
+        padding: 0 0 40px 0;
+    }
+
+    section{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    section:first-child{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .intro h1, .intro p{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .preparation{
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+
+}
