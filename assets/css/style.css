@@ -162,7 +162,7 @@ ul, ol{
 }
 
 li{
-    padding-left: 2.4rem;
+    padding-left: 2rem;
 }
 
 li:not(:last-child){
@@ -172,7 +172,7 @@ li:not(:last-child){
 li::marker{
     color: var(--Chocolat);
     font-weight: 600;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 
 }
 
