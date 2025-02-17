@@ -169,11 +169,17 @@ li:not(:last-child){
     padding-bottom: 0.8rem;
 }
 
-li::marker{
+.preparation ul li::marker, .ingredients ul li::marker, .instructions ol li::marker{
     color: var(--Chocolat);
-    font-weight: 600;
-    font-size: 1.4rem;
+    font-weight: 700;
+}
 
+.preparation ul li::marker, .ingredients ul li::marker{
+    font-size: 1.2rem;
+}
+
+.instructions ol li::marker{
+    font-size: 1.6rem;
 }
 
 section.preparation li::marker{
