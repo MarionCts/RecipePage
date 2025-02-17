@@ -23,7 +23,7 @@ html{
     --Fushia: rgba(122, 40, 78, 1);
 }
 
-/* TYPHTOGRAPHIES */
+/* FONTS */
 
 font-face{
     font-family: 'DM Sans', truetype;
@@ -35,7 +35,7 @@ font-face{
     src: url('assets/fonts/DMSans-Italic-VariableFont_opsz,wght.ttf');
 }
 
-/* MODIFICATIONS GENERALES */
+/* GENERAL */
 
 body{
     background-color: var(--ArrierePlan);
@@ -130,7 +130,7 @@ p, a, li, span, th, td{
 }
 
 .bold, td{
-    font-weight: 600;
+    font-weight: 700;
 
 }
 
@@ -162,7 +162,7 @@ ul, ol{
 }
 
 li{
-    padding-left: 2rem;
+    padding-left: 2.4rem;
 }
 
 li:not(:last-child){
@@ -172,6 +172,8 @@ li:not(:last-child){
 li::marker{
     color: var(--Chocolat);
     font-weight: 600;
+    font-size: 1.6rem;
+
 }
 
 section.preparation li::marker{
