@@ -24,7 +24,7 @@ The challenge was to write semantic HTML and to ensure what HTML elements are mo
 
 ### Solution retrospective
 
-For this challenge, I used the <table> element in HTML for the lower part of the recipe, which allowed me to revisit how to structure a clear and concise table.
+For this challenge, I used the table element in HTML for the lower part of the recipe, which allowed me to revisit how to structure a clear and concise table.
 
 I also wanted to deepen my understanding of CSS selectors and how to style very specific elements. I believe I achieved this goal, but looking back, I realize that some attributes could have been handled more efficiently—for example, by using the gap property on Flexbox elements instead.
 
